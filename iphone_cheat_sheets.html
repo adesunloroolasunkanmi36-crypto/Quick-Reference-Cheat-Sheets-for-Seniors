@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 17 Quick-Reference Cheat Sheets for Seniors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .download-all {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .download-btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .sheets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .sheet-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .sheet-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .sheet-card h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .sheet-card .steps {
+            margin: 15px 0;
+        }
+
+        .step {
+            margin: 12px 0;
+            padding: 12px;
+            background: #f5f7ff;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .step-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .tip {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .tip strong {
+            color: #856404;
+        }
+
+        .download-single {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .download-single button {
+            background: #667eea;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .download-single button:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+        }
+
+        .print-view {
+            display: none;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .header, .download-all, .download-single {
+                display: none;
+            }
+
+            .sheets-grid {
+                display: block;
+            }
+
+            .sheet-card {
+                page-break-after: always;
+                box-shadow: none;
+                border: 2px solid #667eea;
+                margin-bottom: 0;
+                min-height: 100vh;
+                padding: 40px;
+            }
+
+            .sheet-card:last-child {
+                page-break-after: auto;
+            }
+
+            .step-text, .tip {
+                font-size: 1.3em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sheets-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📱 iPhone 17 Quick-Reference Guide</h1>
+            <p>Large-Print Cheat Sheets for Seniors</p>
+        </div>
+
+        <div class="download-all">
+            <button class="download-btn" onclick="window.print()">🖨️ Print All Cheat Sheets</button>
+        </div>
+
+        <div class="sheets-grid">
+            <!-- Sheet 1: How to Make a Call -->
+            <div class="sheet-card">
+                <h2>📞 How to Make a Call</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <span class="step-text">Tap the green <strong>Phone</strong> app on your home screen</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-text">Tap <strong>Keypad</strong> at the bottom of the screen</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span class="step-text">Enter the phone number using the number pad</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <span class="step-text">Tap the green <strong>Call</strong> button</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        <span class="step-text">To end the call, tap the red <strong>End</strong> button</span>
+                    </div>
+                </div>
+                <div class="tip">
+                    <strong>💡 Quick Tip:</strong> To call from your contacts, tap "Contacts" instead of "Keypad" and select the person's name.
+                </div>
+            </div>
+
+            <!-- Sheet 2: Send a Photo to Grandkids -->
+            <div class="sheet-card">
+                <h2>📸 Send a Photo to Grandkids</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <span class="step-text">Open the <strong>Photos</strong> app (colorful flower icon)</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-text">Find and tap the photo you want to send</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span class="step-text">Tap the <strong>Share</strong> button (square with arrow pointing up)</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <span class="step-text">Tap <strong>Messages</strong> to text it or <strong>Mail</strong> to email it</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        <span class="step-text">Type the person's name or number, add a message, and tap <strong>Send</strong></span>
+                    </div>
+                </div>
+                <div class="tip">
+                    <strong>💡 Quick Tip:</strong> You can select multiple photos before tapping Share to send several at once!
+                </div>
+            </div>
+
+            <!-- Sheet 3: Emergency SOS -->
+            <div class="sheet-card">
+                <h2>🚨 Use Emergency SOS</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <span class="step-text">Press and hold the <strong>Side button</strong> and either <strong>Volume button</strong> together</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-text">Keep holding until the Emergency SOS slider appears</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span class="step-text">Drag the <strong>Emergency SOS</strong> slider to call emergency services</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <span class="step-text">Your emergency contacts will be notified automatically</span>
+                    </div>
+                </div>
+                <div class="tip">
+                    <strong>💡 Quick Tip:</strong> If you continue holding the buttons, your iPhone will automatically call emergency services after a countdown. Set up emergency contacts in Settings → Health → Medical ID.
+                </div>
+            </div>
+
+            <!-- Sheet 4: Adjust Text Size -->
+            <div class="sheet-card">
+                <h2>🔤 Adjust Text Size</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <span class="step-text">Open the <strong>Settings</strong> app (gray gear icon)</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-text">Scroll down and tap <strong>Display & Brightness</strong></span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span class="step-text">Tap <strong>Text Size</strong></span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <span class="step-text">Drag the slider left (smaller) or right (larger)</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        <span class="step-text">The preview text shows you the size as you adjust</span>
+                    </div>
+                </div>
+                <div class="tip">
+                    <strong>💡 Quick Tip:</strong> For even larger text, go to Settings → Accessibility → Display & Text Size → Larger Text and enable "Larger Accessibility Sizes".
+                </div>
+            </div>
+
+            <!-- Sheet 5: Quick Siri Commands -->
+            <div class="sheet-card">
+                <h2>🎤 Quick Siri Commands</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <span class="step-text">Say <strong>"Hey Siri"</strong> or press and hold the Side button</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-text"><strong>"Call [name]"</strong> - Makes a phone call</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-text"><strong>"Text [name] I'm on my way"</strong> - Sends a message</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-text"><strong>"What's the weather?"</strong> - Gets weather info</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-text"><strong>"Set a timer for 10 minutes"</strong> - Starts a countdown</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-text"><strong>"Remind me to take medicine at 3pm"</strong> - Creates reminder</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-text"><strong>"FaceTime [name]"</strong> - Starts a video call</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-text"><strong>"Read my messages"</strong> - Siri reads your texts</span>
+                    </div>
+                </div>
+                <div class="tip">
+                    <strong>💡 Quick Tip:</strong> If "Hey Siri" isn't working, enable it in Settings → Siri & Search → Listen for "Hey Siri".
+                </div>
+            </div>
+        </div>
+
+        <div class="download-all">
+            <button class="download-btn" onclick="window.print()">🖨️ Print All Cheat Sheets</button>
+        </div>
+    </div>
+</body>
+</html>
